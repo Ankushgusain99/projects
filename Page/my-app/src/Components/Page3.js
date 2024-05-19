@@ -1,5 +1,6 @@
 import React from 'react'
 import { Grid,Typography ,Box,FormControlLabel,Radio,RadioGroup} from '@mui/material'
+import { Link } from 'react-router-dom'
 
 const Page3 = () => {
   return (
@@ -61,7 +62,10 @@ const Page3 = () => {
         <div style={{display:'flex'}}>
                     <button style={{backgroundColor:'#003C43',borderRadius:'5px',color:'white'}}>Back</button>
                     <button style={{marginLeft:'20px',backgroundColor:'#003C43',borderRadius:'5px',height:'40px',color:'white'}}> Clear Answer</button>
-                    <button style={{marginLeft:'900px',backgroundColor:'#003C43',borderRadius:'5px',height:'40px',color:'white'}}> Next</button>
+                    <Link to='/page4'>
+                        <button style={{marginLeft:'900px',backgroundColor:'#003C43',borderRadius:'5px',height:'40px',color:'white'}}> Next</button>
+                    </Link>
+                    
                 </div>
         </Grid>
 
